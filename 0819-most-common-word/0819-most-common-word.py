@@ -7,19 +7,18 @@ class Solution(object):
         """
         
         word_cnt = {}
-        paragraph = re.sub(r'[^a-z^A-Z]', ' ',paragraph)
+        paragraph = paragraph.lower()
+        paragraph = re.sub(r'[^a-z]', ' ',paragraph)
         
-        for word in paragraph.split():
-            low_word = word.lower()
-           
-            if low_word in banned:
+        for word in paragraph.split():           
+            if word in banned:
                 continue
             
             else:
-                if low_word not in word_cnt:
-                    word_cnt[low_word] = 1
+                if word not in word_cnt:
+                    word_cnt[word] = 1
                 else:
-                    word_cnt[low_word] += 1
+                    word_cnt[word] += 1
                     
         max_cnt = 0
         common_word = ''
