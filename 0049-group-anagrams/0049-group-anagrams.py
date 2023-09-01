@@ -1,5 +1,3 @@
-from itertools import permutations
-
 class Solution(object):
     def groupAnagrams(self, strs):
         """
