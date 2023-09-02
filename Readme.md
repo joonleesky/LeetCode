@@ -30,7 +30,10 @@ _word in anagram
 #### Array
 
 ```
-# l = [('a', 5, 'd'), ('b', 3, 'e'), ('b', 5, 'c')]
-# sort a list based on the order of second then third elements. 
-sorted(l, key=lambda x:(x[1], x[2])) 
+# Two pointer (i.e., sliding window)
+# commonly used trick in both 1-dimensional array and string manipulation
+left_idx = 0, right_idx = 1
+while True:
+  # do something
+  right_idx += 1
 ```
