@@ -1,6 +1,6 @@
-### Python Basic
+## Python Basic
 
-#### String Manipulation
+### String Manipulation
 
 ```
 # l = [('a', 5, 'd'), ('b', 3, 'e'), ('b', 5, 'c')]
@@ -25,9 +25,16 @@ _word = ''.join(sorted(word))
 _word in anagram
 ```
 
-### Linear Data Structure
+## Linear Data Structure
 
-#### Array
+### Array
+
+#### Time Complexity 
+- Access: O(1): directly access by address
+- Insert: O(n): requires moving all the elements in the memory
+- Delete: O(n): requires moving all the elements in the memory
+- Edit: O(1): access then change the value
+
 
 ```
 # Two pointer: O(n) time complexity to compute the sum of sub-arrays
@@ -36,4 +43,16 @@ left_idx = 0, right_idx = 1
 while True:
   # do something
   right_idx += 1
+```
+
+### Linked-List
+
+#### Time Complexity 
+- Access: O(n): requires traverse
+- Insert: O(1): just insert on the head node
+- Delete: O(n): requires traverse
+- Edit: O(n): requires traverse
+```
+
+```
 ```
