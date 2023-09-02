@@ -31,7 +31,7 @@ _word in anagram
 
 ```
 # Two pointer: O(n) time complexity to compute the sum of sub-arrays
-# LeetCode: 0015-3sum
+# LeetCode: 0015-3sum, 0042-trapping-rain-water
 left_idx = 0, right_idx = 1
 while True:
   # do something
