@@ -38,6 +38,7 @@ _word in anagram
 #### Two-pointer technique
 
 - O(n) time complexity to compute the sum of sub-arrays
+- For a singly linked list, you cannot use this techinuqe
 - LeetCode: 0015-3sum, 0042-trapping-rain-water
 ```
 left_idx = 0, right_idx = 1
