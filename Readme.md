@@ -35,9 +35,9 @@ _word in anagram
 - Delete: O(n): requires moving all the elements in the memory
 - Edit: O(1): access then change the value
 
-
+#### Two-pointer technique
 ```
-# Two pointer: O(n) time complexity to compute the sum of sub-arrays
+# O(n) time complexity to compute the sum of sub-arrays
 # LeetCode: 0015-3sum, 0042-trapping-rain-water
 left_idx = 0, right_idx = 1
 while True:
