@@ -30,8 +30,8 @@ _word in anagram
 #### Array
 
 ```
-# Two pointer (i.e., sliding window)
-# commonly used trick in both 1-dimensional array and string manipulation
+# Two pointer: O(n) time complexity to compute the sum of sub-arrays
+# LeetCode: 0015-3sum
 left_idx = 0, right_idx = 1
 while True:
   # do something
