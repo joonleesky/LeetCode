@@ -38,7 +38,7 @@ _word in anagram
 #### Two-pointer technique
 
 - O(n) time complexity to compute the sum of sub-arrays
-- For a singly linked list, you cannot use this techinuqe
+- For a singly linked list, you cannot use this technique
 - LeetCode: 0015-3sum, 0042-trapping-rain-water
 ```
 left_idx = 0, right_idx = 1
@@ -56,5 +56,15 @@ while True:
 - Edit: O(n): requires traverse
 ```
 
+#### Multiple Assignment
+
+- Multiple assignment allows to link nodes without generating temp
+
 ```
+class ListNode(object):
+     def __init__(self, val=0, next=None):
+         self.val = val
+         self.next = next
+
+rev, rev.next, node = node, rev, node.next
 ```
