@@ -30,16 +30,16 @@ _word in anagram
 ### Array
 
 #### Time Complexity 
-- Access: O(1): directly access by address
-- Insert: O(n): requires moving all the elements in the memory
-- Delete: O(n): requires moving all the elements in the memory
-- Edit: O(1): access then change the value
+- Access: O(1): directly access by address.
+- Insert: O(n): requires moving all the elements in the memory.
+- Delete: O(n): requires moving all the elements in the memory.
+- Edit: O(1): access then change the value.
 
 #### Two-pointer technique
 
-- O(n) time complexity to compute the sum of sub-arrays
-- For a singly linked list, you cannot use this technique
-- LeetCode: 0015-3sum, 0042-trapping-rain-water
+- O(n) time complexity to compute the sum of sub-arrays.
+- Obviously, this technique cannot be used in a singly linked list.
+- LeetCode: 0015-3sum, 0042-trapping-rain-water.
 ```
 left_idx = 0, right_idx = len(arr)-1
 while True:
@@ -51,14 +51,14 @@ while True:
 ### Linked-List
 
 #### Time Complexity 
-- Access: O(n): requires traverse
-- Insert: O(1): just insert on the head node
-- Delete: O(n): requires traverse
-- Edit: O(n): requires traverse
+- Access: O(n): requires traverse.
+- Insert: O(1): just insert on the head node.
+- Delete: O(n): requires traverse.
+- Edit: O(n): requires traverse.
 
 #### Multiple Assignment
 
-- Multiple assignment allows to link nodes without generating temp
+- Multiple assignment allows to link nodes without generating temp.
 
 ```
 class ListNode(object):
