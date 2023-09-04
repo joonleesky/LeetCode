@@ -4,7 +4,7 @@
 
 ```
 # l = [('a', 5, 'd'), ('b', 3, 'e'), ('b', 5, 'c')]
-# sort a list based on the order of second then third elements. 
+# Sort a list based on the order of second and then third elements. 
 sorted(l, key=lambda x:(x[1], x[2])) 
 ```
 
@@ -70,8 +70,29 @@ rev, rev.next, node = node, rev, node.next
 ```
 #### Tips
 
-- Given head, it is good to generate a root node at the beginning
+- Given the head, it is good to generate a root node at the beginning
 ```
 root = ListNode()
 root.next = head
 ```
+
+### Stack & Queue & Deque
+
+#### When to use Stack
+
+- Parentheses or bracket matching.
+- Backtracking.
+- Evaluating postfix/prefix expressions.
+- DFS.
+
+#### When to use Queue
+
+- Problems related to order or sequence.
+- Level order traversal in trees.
+- BFS.
+
+#### When to use Deque
+
+- Sliding window problems (when you want to add/remove elements from both ends).
+- Palindrome checking.
+- Default (when the problem is ambiguous to select either stack or queue, just use deque).
