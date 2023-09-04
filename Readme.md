@@ -41,10 +41,11 @@ _word in anagram
 - For a singly linked list, you cannot use this technique
 - LeetCode: 0015-3sum, 0042-trapping-rain-water
 ```
-left_idx = 0, right_idx = 1
+left_idx = 0, right_idx = len(arr)-1
 while True:
   # do something
-  right_idx += 1
+  left_idx += 1
+  right_idx -= 1
 ```
 
 ### Linked-List
