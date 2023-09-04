@@ -54,7 +54,6 @@ while True:
 - Insert: O(1): just insert on the head node
 - Delete: O(n): requires traverse
 - Edit: O(n): requires traverse
-```
 
 #### Multiple Assignment
 
@@ -67,4 +66,11 @@ class ListNode(object):
          self.next = next
 
 rev, rev.next, node = node, rev, node.next
+```
+#### Tips
+
+- Given head, it is good to generate a root node at the beginning
+```
+root = ListNode()
+root.next = head
 ```
