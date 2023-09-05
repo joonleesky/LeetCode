@@ -121,3 +121,15 @@ root.next = head
 - Insertion at the end: O(1) on average, O(n) in the worst case for array, O(1) for linked list.
 - Deletion at the beginning: O(1).
 - Deletion at the end: O(1).
+
+#### Can we use collections.deque?
+
+- If the question is to implement a deque, implement it by hand.
+- If the question
+
+### Hash Map
+
+hash_map = dict()
+hash_map = collections.defaultdict()
+
+#### 
