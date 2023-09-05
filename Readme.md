@@ -132,4 +132,15 @@ root.next = head
 hash_map = dict()
 hash_map = collections.defaultdict()
 
-#### 
+#### Time Complexity
+
+- Write it later.
+
+## Non-Linear Data Structure
+
+### Graph
+-
+
+#### Graph Search
+- BFS
+- DFS
