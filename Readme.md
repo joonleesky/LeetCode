@@ -144,3 +144,8 @@ hash_map = collections.defaultdict()
 #### Graph Search
 - BFS
 - DFS
+
+#### Shortest Path
+
+- All positive edge values: Dijkstra.
+- Including negative edge values: Bellman-Ford.
