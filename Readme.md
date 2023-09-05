@@ -147,5 +147,5 @@ hash_map = collections.defaultdict()
 
 #### Shortest Path
 
-- All positive edge values: Dijkstra.
-- Including negative edge values: Bellman-Ford.
+- All positive edge values: **Dijkstra**.
+- Including negative edge values: **Bellman-Ford**.
