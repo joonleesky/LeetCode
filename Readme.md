@@ -76,23 +76,48 @@ root = ListNode()
 root.next = head
 ```
 
-### Stack & Queue & Deque
+### Stack
 
-#### When to use Stack
+#### When to use
 
 - Parentheses or bracket matching.
 - Backtracking.
 - Evaluating postfix/prefix expressions.
 - DFS.
 
-#### When to use Queue
+#### Time Complexity
+
+- Insertion at the beginning: not typically supported (If implemented, array: O(n), linked list: O(1)).
+- Insertion at the end: O(1).
+- Deletion at the beginning: not typically supported (If implemented, array: O(1)).
+- Deletion at the end: O(1).
+- 
+### Queue
+
+#### When to use
 
 - Problems related to order or sequence.
 - Level order traversal in trees.
 - BFS.
+
+#### Time Complexity
+
+- Insertion at the beginning: not typically supported (If implemented, array: O(n), linked list: O(1)).
+- Insertion at the end: O(1).
+- Deletion at the beginning: O(1).
+- Deletion at the end: Not typically supported (If implemented, array: O(n), linked list: O(1) if a tail pointer is maintained).
+
+### Deque
 
 #### When to use Deque
 
 - Sliding window problems (when you want to add/remove elements from both ends).
 - Palindrome checking.
 - Default (when the problem is ambiguous to select either stack or queue, just use deque).
+
+#### Time Complexity
+
+- Insertion at the beginning: O(1) on average, O(n) in the worst case for array, O(1) for linked list.
+- Insertion at the end: O(1) on average, O(n) in the worst case for array, O(1) for linked list.
+- Deletion at the beginning: O(1).
+- Deletion at the end: O(1).
