@@ -18,15 +18,8 @@ class Solution(object):
         # traverse with dfs
         stack = []
         stack.append([edges.keys()[0]])
-        
-        def cnt_edges(edges):
-            cnt = 0
-            edge_lists = edges.values()
-            for edge_list in edge_lists:
-                cnt += len(edge_list)
-            return cnt
             
-        while (cnt_edges(edges) > 0):
+        while (len(edges) > 0):
             schedule = stack.pop()
             a = schedule[-1]
 
