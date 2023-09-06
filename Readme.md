@@ -139,13 +139,23 @@ hash_map = collections.defaultdict()
 ## Non-Linear Data Structure
 
 ### Graph
--
+- Graph consists of Vertices (i.e., Nodes) and Edges, G=(V, E).
+- Vertices are commonly represented with a list.
+- Edges are commonly represented with a dictionary.
 
-#### Graph Search
-- BFS
-- DFS
+### Tree
+- A tree is an acyclic undirected graph (i.e., no cycle structure).
+
+### Search
+
+#### BFS
+- Starts at the root node and explores all nodes at the present depth then moves on to the next depth.
+- Commonly implemented with queue.
+
+#### DFS
+- Starts at the root node and explores all nodes at the present depth then moves on to the next depth.
+- Commonly implemented with stack.
 
 #### Shortest Path
-
 - All positive edge values: **Dijkstra**.
 - Including negative edge values: **Bellman-Ford**.
