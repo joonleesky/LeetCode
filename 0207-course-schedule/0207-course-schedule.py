@@ -32,12 +32,12 @@ class Solution(object):
                 
                 new_schedule = schedule + [b]
 
+                if len(new_schedule) > len(set(new_schedule)):
+                    return False
+                
             else:
                 if len(stack) == 0:
                     new_schedule = [next(iter(edges))]
-            
-            if len(new_schedule) > len(set(new_schedule)):
-                return False
                 
             stack.append(new_schedule)
                 
