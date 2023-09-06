@@ -28,8 +28,8 @@ class Solution(object):
             if a in edges:
                 bs = edges[a]
                 b = bs[0]
-                edges[a].remove(b)
-                if len(edges[a]) == 0:
+                bs.remove(b)
+                if len(bs) == 0:
                     del edges[a]
                     
                 new_schedule = schedule + [b]
