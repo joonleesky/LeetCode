@@ -32,7 +32,7 @@ class Solution(object):
                 
                 new_schedule = schedule + [b]
 
-                if len(new_schedule) > len(set(new_schedule)):
+                if b in schedule:
                     return False
                 
             else:
