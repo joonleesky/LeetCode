@@ -34,7 +34,7 @@ class Solution(object):
 
             else:
                 if len(stack) == 0:
-                    new_schedule = [edges.keys()[0]]
+                    new_schedule = [next(iter(edges))]
             
             if len(new_schedule) > len(set(new_schedule)):
                 return False
