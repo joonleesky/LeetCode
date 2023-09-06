@@ -11,8 +11,10 @@ class Solution(object):
             return True
         
         # construct directed graphs
-        edges = collections.defaultdict(list)
+        edges = {}
         for (a, b) in prerequisites:
+            if a not in edges:
+                edges[a] = []
             edges[a].append(b)
         
         # traverse with dfs
