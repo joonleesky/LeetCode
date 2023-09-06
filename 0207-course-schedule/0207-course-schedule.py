@@ -17,7 +17,7 @@ class Solution(object):
         
         # traverse with dfs
         stack = []
-        stack.append([edges.keys()[0]])
+        stack.append([next(iter(edges))])
             
         while (len(edges) > 0):
             schedule = stack.pop()
