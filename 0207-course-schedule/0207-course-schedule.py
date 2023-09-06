@@ -26,7 +26,7 @@ class Solution(object):
             if a in edges:
                 bs = edges[a]
                 b = bs[0]
-                edges[a].remove(b)
+                edges[a] = bs[1:]
                 if len(edges[a]) == 0:
                     del edges[a]
                 
