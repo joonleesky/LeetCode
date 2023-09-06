@@ -26,15 +26,14 @@ class Solution(object):
             if a in edges:
                 bs = edges[a]
                 b = bs[0]
-                
-                if b in schedule:
-                    return False
-                
                 edges[a].remove(b)
                 if len(edges[a]) == 0:
                     del edges[a]
-                
+                    
                 new_schedule = schedule + [b]
+                
+                if b in schedule:
+                    return False
                 
             else:
                 if len(stack) == 0:
