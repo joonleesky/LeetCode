@@ -160,4 +160,9 @@ hash_map = collections.defaultdict()
 - Algorithm for finding the shortest path with positive distance between each node.
 - Dijkstra can be interpreted as BFS + jump-in-queue.
 - For each node, Dijkstra explores all nodes at the present depth and then selects the node with the smallest total distance.
-- Commonly implemented with priority-queue (to select the node with smallest distance).
+- Commonly implemented with a priority queue (to select the node with the smallest distance).
+```
+import heapq
+heapq.heappush(item)
+heapq.heappop(item
+```
