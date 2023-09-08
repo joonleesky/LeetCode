@@ -156,6 +156,8 @@ hash_map = collections.defaultdict()
 - Starts at the root node and explores all nodes at the present depth then moves on to the next depth.
 - Commonly implemented with stack.
 
-#### Shortest Path
-- All positive edge values: **Dijkstra**.
-- Including negative edge values: **Bellman-Ford**.
+#### Dijkstra
+- Algorithm for finding the shortest path with positive distance between each node.
+- Dijkstra can be interpreted as BFS + jump-in-queue.
+- For each node, Dijkstra explores all nodes at the present depth and then selects the node with the smallest total distance.
+- Commonly implemented with priority-queue (to select the node with smallest distance).
