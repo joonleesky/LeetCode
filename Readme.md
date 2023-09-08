@@ -164,5 +164,6 @@ hash_map = collections.defaultdict()
 ```
 import heapq
 heapq.heappush(item)
-heapq.heappop(item
+heapq.heappop()
+
 ```
