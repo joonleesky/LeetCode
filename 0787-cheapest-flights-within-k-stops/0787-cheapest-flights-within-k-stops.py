@@ -27,16 +27,15 @@ class Solution(object):
         # Dijkstra
         while (len(heap) > 0):
             cur_price, num_stop, cur_node = heapq.heappop(heap)
-            if num_stop > k:
-                continue
-            
             destinations = graph[cur_node]
             for destination, price in destinations.items():
                 new_price = cur_price + price
                 new_stop = num_stop + 1
                 if new_price < total_price[destination][new_stop]:
                     total_price[destination][new_stop] = new_price
-                    heapq.heappush(heap, (new_price, new_stop, destination))
+                    
+                    if new_stop <= k:
+                        heapq.heappush(heap, (new_price, new_stop, destination))
         
         cheapest_price = min(total_price[dst].values())
         if cheapest_price == float('inf'):
