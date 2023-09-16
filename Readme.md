@@ -56,18 +56,6 @@ while True:
 - Delete: O(n): requires traverse.
 - Edit: O(n): requires traverse.
 
-#### Multiple Assignment
-
-- Multiple assignment allows to link nodes without generating temp.
-
-```
-class ListNode(object):
-     def __init__(self, val=0, next=None):
-         self.val = val
-         self.next = next
-
-rev, rev.next, node = node, rev, node.next
-```
 #### Tips
 
 - Given the head, it is good to generate a root node at the beginning
@@ -122,10 +110,9 @@ root.next = head
 - Deletion at the beginning: O(1).
 - Deletion at the end: O(1).
 
-#### Can we use collections.deque?
+#### Tips 
 
-- If the question is to implement a deque, implement it by hand.
-- If the question
+- Use collections.deque()
 
 ### Hash Map
 
