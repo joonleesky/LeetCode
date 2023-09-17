@@ -143,10 +143,10 @@ hash_map = collections.defaultdict()
 - Starts at the root node and explores all nodes at the present depth then moves on to the next depth.
 - Commonly implemented with stack.
 
-### In-order Traverse
+#### In-order Traverse
 - left -> center -> right
 
-### Post-order Traverse
+#### Post-order Traverse
 - left -> right -> center
 
 #### Dijkstra
