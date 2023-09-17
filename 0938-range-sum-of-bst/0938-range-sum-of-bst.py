@@ -11,7 +11,6 @@ class Solution(object):
     def collect(self, node, low, high):
         if node:
             val = node.val
-            print(val, self.sum)
             if val < low:
                 self.collect(node.right, low, high)
                 
