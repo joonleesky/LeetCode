@@ -139,9 +139,12 @@ hash_map = collections.defaultdict()
 - Starts at the root node and explores all nodes at the present depth then moves on to the next depth.
 - Commonly implemented with queue.
 
-#### DFS (=Pre-order traverse)
+#### DFS 
 - Starts at the root node and explores all nodes at the present depth then moves on to the next depth.
 - Commonly implemented with stack.
+- Pre-order-traverse: center->left->right.
+- In-order-traverse: left->center->right (ascending order in BST).
+- Post-order-traverse: left->right->center.
 
 #### In-order Traverse
 - left -> center -> right
