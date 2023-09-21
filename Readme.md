@@ -133,6 +133,33 @@ hash_map = collections.defaultdict()
 ### Tree
 - A tree is an acyclic undirected graph (i.e., no cycle structure).
 
+#### Binary Search Tree
+- A tree with every right node's value is greater than the left node's value.
+- Insertion (avg): O(logN).
+- Insertion (worst): O(logN).
+- Find any: O(logN).
+- Find max: O(1).
+  - Common misconception is O(logN).
+  - We can simply modify the BST algorithm to track the largest.
+- Deletion: O(logN).
+
+#### Heap
+- A tree with every parent node's value is greater than the child node's value.
+- Heap is a complete binary tree.
+- Insertion (avg): O(1).
+  - Generally, most of the nodes will be located in the bottom.
+  - Although not widely recognized, this is the major benefit of Heap!
+- Insertion (worst): O(logN).
+- Find any: O(N).
+- Find max: O(1).
+- Deletion: O(logN).
+
+```
+import heapq
+heapq.heappush(item)
+heapq.heappop()
+```
+
 ### Search
 
 #### BFS
@@ -157,9 +184,6 @@ hash_map = collections.defaultdict()
 - Dijkstra can be interpreted as BFS + jump-in-queue.
 - For each node, Dijkstra explores all nodes at the present depth and then selects the node with the smallest total distance.
 - Commonly implemented with a priority queue (to select the node with the smallest distance).
-```
-import heapq
-heapq.heappush(item)
-heapq.heappop()
 
-```
+## Algorithms
+
