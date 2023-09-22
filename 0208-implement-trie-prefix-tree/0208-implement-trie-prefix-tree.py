@@ -15,7 +15,6 @@ class Trie(object):
         """
         node = self.root
         for char in word:
-            last_node = node
             if char in node.children:
                 node = node.children[char]
             else:
@@ -30,7 +29,6 @@ class Trie(object):
         """
         node = self.root
         for char in word:
-            last_node = node
             if char in node.children:
                 node = node.children[char]
             else:
@@ -48,7 +46,6 @@ class Trie(object):
         """
         node = self.root
         for char in prefix:
-            last_node = node
             if char in node.children:
                 node = node.children[char]
             else:
