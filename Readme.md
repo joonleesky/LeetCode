@@ -160,6 +160,10 @@ heapq.heappush(item)
 heapq.heappop()
 ```
 
+#### Trie
+- A tree structure for comparing strings.
+- 
+
 ### Search
 
 #### BFS
@@ -187,3 +191,16 @@ heapq.heappop()
 
 ## Algorithms
 
+### Sorting
+
+#### Bubble-Sort
+
+#### Insertion Sort
+
+#### Quick Sort
+
+#### Heap Sort
+
+#### Merge Sort
+
+#### 안전 정렬 vs 불안정 정렬
