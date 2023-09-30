@@ -194,13 +194,60 @@ heapq.heappop()
 ### Sorting
 
 #### Bubble-Sort
-
-#### Insertion Sort
+```
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+    return arr
+```
 
 #### Quick Sort
+- average time complexity: O(nlogn).
+- worst time complexity: O(n^2).
+  - The smallest or the largest pivot is selected.
+- space complexity: None (just in-place operation).
 
-#### Heap Sort
+```
+def quick_sort(arr):
+    if len(arr) <= 1:
+        return arr
+    pivot = arr[len(arr) // 2]
+    left = [x for x in arr if x < pivot]
+    middle = [x for x in arr if x == pivot]
+    right = [x for x in arr if x > pivot]
+    return quick_sort(left) + middle + quick_sort(right)
+```
 
 #### Merge Sort
+- average time complexity: O(nlogn).
+- worst time complexity: O(nlogn).
+- space complexity: O(n) (merged array should be kept).
+
+```
+def merge_sort(arr):
+    if len(arr) <= 1:
+        return arr
+
+    mid = len(arr) // 2
+    left = merge_sort(arr[:mid])
+    right = merge_sort(arr[mid:])
+
+    merged = []
+    i, j = 0, 0
+    while i < len(left) and j < len(right):
+        if left[i] < right[j]:
+            merged.append(left[i])
+            i += 1
+        else:
+            merged.append(right[j])
+            j += 1
+    merged.extend(left[i:])
+    merged.extend(right[j:])
+    
+    return merged
+```
 
 #### 안전 정렬 vs 불안정 정렬
