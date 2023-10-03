@@ -36,6 +36,5 @@ class Solution(object):
             return '0'
         
         nums = [str(num) for num in nums]        
-        nums = self.merge_sort(nums)
         
-        return ''.join(nums)
+        return ''.join(self.merge_sort(nums))
