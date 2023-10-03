@@ -10,14 +10,17 @@ class Solution(object):
         merged = []
         i,j = 0,0
         while i <len(left) and j < len(right):
-            left_num = int(left[i] + right[j])
-            right_num = int(right[j] + left[i])
+            left_val = left[i]
+            right_val = right[j]
+            
+            left_num = int(left_val + right_val)
+            right_num = int(right_val + left_val)
                     
             if left_num > right_num:
-                merged.append(left[i])
+                merged.append(left_val)
                 i += 1
             else:
-                merged.append(right[j])
+                merged.append(right_val)
                 j += 1
                 
         merged += left[i:]
