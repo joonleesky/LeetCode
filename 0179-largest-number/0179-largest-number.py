@@ -20,8 +20,8 @@ class Solution(object):
                 merged.append(right[j])
                 j += 1
                 
-        merged.extend(left[i:])
-        merged.extend(right[j:])
+        merged += left[i:]
+        merged += right[j:]
         
         return merged
     
