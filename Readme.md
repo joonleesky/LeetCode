@@ -38,6 +38,7 @@ _word in anagram
 #### Two-pointer technique
 
 - O(n) time complexity to compute the sum of sub-arrays.
+- Commonly used in an ordered array.
 - Obviously, this technique cannot be used in a singly linked list.
 - LeetCode: 0015-3sum, 0042-trapping-rain-water.
 ```
@@ -47,6 +48,11 @@ while True:
   left_idx += 1
   right_idx -= 1
 ```
+
+#### Sliding-window technique
+
+- O(n) time complexity to compute the sum of sub-arrays.
+- Commonly used in an un-ordered array.
 
 ### Linked-List
 
