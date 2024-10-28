@@ -256,4 +256,9 @@ def merge_sort(arr):
     return merged
 ```
 
-#### 안전 정렬 vs 불안정 정렬
+## Math
+
+### Finding GCD (Euclidean algorithm)
+
+- GCD of x & y only exists within max(x,y) - min(x,y).
+
